@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    
+    <div class="body">
+        <div class="container ">
+            <h1 class="heading">Sai's Calculator</h1>
+            <div class="row square">
+                <input class="big-square"  type="text" name="" id="input">
+            </div>
+            <div class="row lessWidth">
+                <button class="btn lw bg-or" onclick="clearResult()">AC</button>
+                <button class="btn lw bg-or" onclick="Number('%')">%</button>
+                <button class="btn lw bg-or"onclick="Number('**2')">X<sup>2</sup></button>
+                <button class="btn lw bg-or" onclick="Number('/')">/</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="Number('7')">7</button>
+                <button class="btn" onclick="Number('8')">8</button>
+                <button class="btn" onclick="Number('9')">9</button>
+                <button class="btn bg-or" onclick="Number('*')">*</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="Number('4')">4</button>
+                <button class="btn" onclick="Number('5')">5</button>
+                <button class="btn" onclick="Number('6')">6</button>
+                <button class="btn bg-or" onclick="Number('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="Number('1')">1</button>
+                <button class="btn" onclick="Number('2')">2</button>
+                <button class="btn" onclick="Number('3')">3</button>
+                <button class="btn bg-or" onclick="Number('+')">+</button>
+            </div>
+            <div class="row toLeft" >
+                <button class="btn" onclick="Number('0')">0</button>
+                <button class="btn" onclick="Number('.')">.</button>
+                <button class="btn lamb" onclick="result()">=</button>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
